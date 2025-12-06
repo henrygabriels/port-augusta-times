@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read this thrilling article from The Port Augusta Times">
+    <title>Article | The Port Augusta Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-newspaper">📰</div>
+        <div class="loading-text">LOADING ARTICLE...</div>
+    </div>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-container">
+        <span class="breaking-label">BREAKING</span>
+        <div class="ticker-wrap">
+            <div class="ticker" id="newsTicker"></div>
+        </div>
+    </div>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <a href="index.html" style="text-decoration: none;">
+            <h1>📰 THE PORT AUGUSTA TIMES 📰</h1>
+        </a>
+        <p class="tagline">TRUSTED SINCE 1847*</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li><a href="section.html?section=1_local_government">🏛️ GOVERNMENT</a></li>
+            <li><a href="section.html?section=2_business">💼 BUSINESS</a></li>
+            <li><a href="section.html?section=3_education">📚 EDUCATION</a></li>
+            <li><a href="section.html?section=4_public_safety">🚔 CRIME</a></li>
+            <li><a href="section.html?section=5_sports">⚽ SPORTS</a></li>
+            <li><a href="section.html?section=6_community">🎭 COMMUNITY</a></li>
+            <li><a href="section.html?section=7_health">🏥 HEALTH</a></li>
+            <li><a href="section.html?section=8_opinion">💬 OPINION</a></li>
+            <li><a href="horoscopes.html">🔮 HOROSCOPES</a></li>
+            <li><a href="section.html?section=9_environment">🌿 ENVIRONMENT</a></li>
+            <li><a href="section.html?section=10_transportation">🚗 TRANSPORT</a></li>
+            <li><a href="classifieds.html">📋 CLASSIFIEDS</a></li>
+            <li><a href="advertisements.html">📢 ADS</a></li>
+            <li><a href="about.html">❓ ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Article Content -->
+    <main id="articleContent">
+        <!-- Populated by JS -->
+        <div class="empty-state">
+            <div class="empty-state-icon">📰</div>
+            <h3>Loading article...</h3>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-logo">THE PORT AUGUSTA TIMES</div>
+        <div class="footer-quote">
+            "The Region's Voice Since 1847"
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classifieds.html">Classifieds</a></li>
+            <li><a href="advertisements.html">Advertise With Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="footer-copy">
+            © 1847-2025 The Port Augusta Times. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initNewsTicker();
+            loadSingleArticle();
+            setTimeout(() => {
+                document.getElementById('loadingScreen').classList.add('hidden');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

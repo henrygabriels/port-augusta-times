@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advertise with The Port Augusta Times - Reach !">
+    <title>Advertisements | The Port Augusta Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📢</text></svg>">
+</head>
+
+<body>
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news-container">
+        <span class="breaking-label">BREAKING</span>
+        <div class="ticker-wrap">
+            <div class="ticker" id="newsTicker"></div>
+        </div>
+    </div>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <a href="index.html" style="text-decoration: none;">
+            <h1>📰 THE PORT AUGUSTA TIMES 📰</h1>
+        </a>
+        <p class="tagline">TRUSTED SINCE 1847*</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li><a href="section.html?section=1_local_government">🏛️ GOVERNMENT</a></li>
+            <li><a href="section.html?section=2_business">💼 BUSINESS</a></li>
+            <li><a href="section.html?section=3_education">📚 EDUCATION</a></li>
+            <li><a href="section.html?section=4_public_safety">🚔 CRIME</a></li>
+            <li><a href="section.html?section=5_sports">⚽ SPORTS</a></li>
+            <li><a href="section.html?section=6_community">🎭 COMMUNITY</a></li>
+            <li><a href="section.html?section=7_health">🏥 HEALTH</a></li>
+            <li><a href="section.html?section=8_opinion">💬 OPINION</a></li>
+      <li><a href="horoscopes.html">🔮 HOROSCOPES</a></li>
+            <li><a href="section.html?section=9_environment">🌿 ENVIRONMENT</a></li>
+            <li><a href="section.html?section=10_transportation">🚗 TRANSPORT</a></li>
+            <li><a href="classifieds.html">📋 CLASSIFIEDS</a></li>
+            <li><a href="advertisements.html" class="active">📢 ADS</a></li>
+            <li><a href="about.html">❓ ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Header -->
+    <div class="section-header">
+        <h1>📢 ADVERTISE WITH US 📢</h1>
+
+    </div>
+
+    <!-- Main Content -->
+    <main style="max-width: 1200px; margin: 0 auto; padding: 30px 20px;">
+
+        <!-- Featured Banner Ad -->
+        <div class="banner-ad">
+            <h2>🌟 MEGA ADVERTISING SPECIAL! 🌟</h2>
+            <p>Book 3 ads and get the 4th at a discounted price! Limited time only!</p>
+            <a href="#" class="cta-btn"
+                onclick="alert('A representative will contact you shortly!')">CLAIM THIS DEAL!</a>
+        </div>
+
+        <!-- Current Advertisers -->
+        <h2 class="section-title">🏆 OUR VALUED ADVERTISERS</h2>
+
+        <div id="advertsContainer" class="ad-showcase">
+             <div class="empty-state" style="grid-column: 1/-1;">
+                <div class="empty-state-icon">📢</div>
+                <h3>Loading advertisements...</h3>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <h2 class="section-title" style="margin-top: 50px;">💬 WHAT OUR ADVERTISERS SAY</h2>
+
+        <div class="testimonial">
+            <blockquote>
+                "Advertising with The Port Augusta Times has significantly increased customer engagement and recognition for my business!"
+            </blockquote>
+            <span class="author">— Big Barry, Big Barry's Bait & Tackle</span>
+        </div>
+
+        <div class="testimonial">
+            <blockquote>
+                "The ad generated significant interest, leading to many inquiries about the property. It was very effective!"
+            </blockquote>
+            <span class="author">— Anonymous Estate Seller</span>
+        </div>
+
+        <div class="testimonial">
+            <blockquote>
+                "My advertising campaign was successful, and I've met wonderful people and joined new community groups as a result!"
+            </blockquote>
+            <span class="author">— Margaret P., Port Augusta South</span>
+        </div>
+
+        <!-- Rate Card -->
+        <div class="rate-card">
+            <h3>📋 ADVERTISING RATES 📋</h3>
+            <table class="rate-table">
+                <thead>
+                    <tr>
+                        <th>Ad Type</th>
+                        <th>Size</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classified Text</td>
+                        <td>25 words or so</td>
+                        <td>1 week</td>
+                        <td class="price">$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Display Ad (Small)</td>
+                        <td>1/8 page</td>
+                        <td>1 week</td>
+                        <td class="price">$75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Display Ad (Medium)</td>
+                        <td>1/4 page</td>
+                        <td>1 week</td>
+                        <td class="price">$150.00</td>
+                    </tr>
+                    <tr>
+                        <td>Display Ad (Large)</td>
+                        <td>1/2 page</td>
+                        <td>1 week</td>
+                        <td class="price">$275.00</td>
+                    </tr>
+                    <tr>
+                        <td>Full Page Takeover</td>
+                        <td>FULL PAGE</td>
+                        <td>1 week</td>
+                        <td class="price">$500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Breaking News Ticker</td>
+                        <td>Scrolling text</td>
+                        <td>24 hours</td>
+                        <td class="price">$99.00</td>
+                    </tr>
+                    <tr>
+                        <td>Homepage Popup</td>
+                        <td>Annoying</td>
+                        <td>Until closed</td>
+                        <td class="price">$1,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chaos Mode Integration</td>
+                        <td>Maximum</td>
+                        <td>∞</td>
+                        <td class="price">$?????.??</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 20px; color: #888;">
+                * All prices.
+            </p>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="banner-ad" style="margin-top: 50px;">
+            <h2>📞 READY TO ADVERTISE? 📞</h2>
+            <p>Contact our sales team today!</p>
+            <a href="#" class="cta-btn"
+                onclick="alert('Please leave a message.')">
+                CONTACT US NOW!
+            </a>
+        </div>
+
+    </main>
+
+        <!-- Footer -->
+
+        <footer class="main-footer">
+
+            <div class="footer-logo">THE PORT AUGUSTA TIMES</div>
+
+            <div class="footer-quote">
+
+                "The Region's Voice Since 1847"
+
+            </div>
+
+            <ul class="footer-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="classifieds.html">Classifieds</a></li>
+
+                <li><a href="advertisements.html">Advertise With Us</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+            </ul>
+
+            <div class="footer-copy">
+
+                © 1847-2025 The Port Augusta Times. All Rights Reserved.
+
+            </div>
+
+        </footer>
+
+    
+
+        <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initNewsTicker();
+            if (typeof loadAdverts === 'function') {
+                loadAdverts();
+            }
+        });
+    </script>
+</body>
+
+</html>
